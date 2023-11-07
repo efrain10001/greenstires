@@ -1,5 +1,4 @@
 import React from "react";
-import { Image } from "@nextui-org/react";
 
 function Tuning() {
   return (
@@ -7,14 +6,14 @@ function Tuning() {
       <h1 className="flex font-bold text-[20px]  justify-center text-[black]">
         Afinación
       </h1>
-      <Image
-        className="rounded-[0px] h-[200px] lg:h-full"
-        alt="NextUI hero Image"
-        src="/balanceo.png"
-      />
       <p
-        className="absolute text-center text-[14px] p-[10px] top-[70px] lg:p-[0px] lg:text-[20px] lg:top-[230px] lg:w-[900px] "
-        style={{ zIndex: 10 }}
+        className="text-center text-[14px] p-[10px] top-[70px] lg:p-[30px] lg:text-[20px] lg:top-[230px] lg:w-[990px] "
+        style={{
+          zIndex: 10,
+          backgroundImage: "url(/balanceo.png)",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
       >
         En nuestro taller nos enorgullecemos de ofrecer una gama completa de
         servicios de afinacion diseñados para optimizar el rendimiento y la

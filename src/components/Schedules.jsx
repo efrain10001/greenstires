@@ -1,4 +1,5 @@
 import { Button } from "@nextui-org/button";
+import { Input } from "@nextui-org/react";
 import React from "react";
 
 function Schedules() {
@@ -11,8 +12,8 @@ function Schedules() {
   };
 
   return (
-    <div className=" flex justify-around mb-[20px] mt-[50px] flex-wrap ">
-      <div className=" flex flex-col  w-[300px] lg:w-[400px] lg:left-[30px] ">
+    <div className="flex justify-around mb-[20px] mt-[50px] flex-col lg:flex-row">
+      <div className=" flex flex-col w-full lg:w-[400px] lg:left-[30px] p-[20px]">
         <h1 className="font-bold text-[15px]  text-[black]">Horarios</h1>
         <div className="flex ">
           <p className="mr-[10px] h-[20px] w-[80px]  text-[black]">Lunes:</p>
@@ -37,9 +38,9 @@ function Schedules() {
           <p className=" h-[20px] w-[110px] text-[black]">9 am - 5 pm</p>
         </div>
         <div className="flex ">
-          <p className="mr-[10px] h-[20px] w-[80px]  text-[black]">Sabado:</p>
-          <p className=" h-[20px] w-[290px] text-[black] ">
-            9 am - 2 pm (solo citas agendadas)
+          <p className="mr-[10px] h-[20px] w-[80px] text-[black]">Sabado:</p>
+          <p className=" h-[20px] w-[240px] text-[black] ">
+            9 am - 2 pm (Solo citas)
           </p>
         </div>
         <div className="flex">
@@ -47,11 +48,13 @@ function Schedules() {
           <p className=" h-[20px] w-[110px] text-[black]"> Cerrado</p>
         </div>
       </div>
-      <div className="flex flex-col mb-[20px] lg:mb-[0px]  mt-[40px]">
-        <h1 className="font-bold text-[15px] text-[black]">Contactanos</h1>
-        <input className="mb-[10px]" />
-        <input className="mb-[10px]" />
-        <input className="mb-[10px]" />
+      <div className="flex flex-col mb-[20px] lg:mb-[0px] mt-[40px] lg:mt-[0px] w-full p-[20px] lg:p-[0px]">
+        <h1 className="font-bold text-[15px] text-[black] mb-[10px]">
+          Contactanos
+        </h1>
+        <Input className="mb-[10px]" placeholder="Nombre..." />
+        <Input className="mb-[10px]" placeholder="Teléfono..." />
+        <Input className="mb-[10px]" placeholder="¿Como podemos ayudarte?" />
         <Button onClick={() => sendEmail()}>send email</Button>
       </div>
     </div>
