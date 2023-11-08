@@ -1,7 +1,5 @@
 "use client";
 
-import { Image } from "@nextui-org/react";
-
 //Sections
 import Home from "../components/Home";
 import Profetional from "../components/Profetional";
@@ -11,6 +9,8 @@ import Welding from "@/components/Welding";
 import Paint from "@/components/Paint";
 import Address from "@/components/Address";
 import Schedules from "@/components/Schedules";
+
+import i18n from "@/translations";
 
 export default function App() {
   return (

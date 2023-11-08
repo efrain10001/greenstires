@@ -1,11 +1,14 @@
 import React from "react";
 import { Image } from "@nextui-org/react";
 
+import { useTranslation } from "react-i18next";
+
 function Service() {
+  const { t } = useTranslation();
   return (
-    <div className=" flex flex-col mt-[120px] ">
+    <div className=" flex flex-col mt-[120px]" id="services">
       <h1 className=" flex font-bold text-[20px]  justify-center text-[black]">
-        Nuestros servicios
+        {t("ourServiceTitle")}
       </h1>
       <div className="flex justify-around mt-[40px] flex-wrap ">
         <div className="flex flex-col items-center w-[230px] ">
@@ -17,14 +20,12 @@ function Service() {
             />
           </div>
           <h1 className="text-[15px] h-[40px] font-bold  text-[#4D8F5B]">
-            Reparación de motores
+            {t("motorRepairTitle")}
           </h1>
           <p className="text-[14px] text-center text-[black]">
-            Restauramos la potencia y el rendimiento de motores con precisión y
-            experiencia, devolviendo vida a tu vehículo
+            {t("motorRepairDescription")}
           </p>
         </div>
-
         <div className="flex flex-col items-center w-[230px] mt-[20px] lg:mt-[0px] ">
           <div className="h-[50px] ">
             <Image
@@ -34,11 +35,10 @@ function Service() {
             />
           </div>
           <h1 className="text-[15px] h-[40px] font-bold  text-[#4D8F5B]">
-            Cambio de refacciones
+            {t("change of spare parts")}
           </h1>
           <p className="text-[14px] text-center text-[black]">
-            Renovamos tu vehículo con repuestos de calidad, devolviendo la
-            eficiencia y confiabilidad a tu automóvil
+            {t("changeOfSparePartsDescription")}
           </p>
         </div>
 
@@ -52,11 +52,10 @@ function Service() {
           </div>
 
           <h1 className="text-[15px] h-[40px]  font-bold text-center  text-[#4D8F5B]">
-            Mantenimiento y servicio preventivo
+            {t("maintenanceAndServicePreventiveTitle")}
           </h1>
           <p className="text-[14px] text-center text-[black]">
-            Protege tu inversión automotriz con nuestro mantenimiento experto,
-            previniendo problemas y alargando la vida de tu vehículo.
+            {t("maintenanceAndServicePreventiveDescription")}
           </p>
         </div>
       </div>
@@ -70,11 +69,10 @@ function Service() {
             />
           </div>
           <h1 className="text-[15px] font-bold h-[40px]  text-[#4D8F5B]">
-            Pintura y encerado
+            {t("paintingAndWaxingTitle")}
           </h1>
           <p className="text-[14px] text-center text-[black]">
-            Restaura el brillo y protege la estética de tu vehículo con nuestro
-            servicio de pintura y encerado profesional.
+            {t("paintingAndWaxingdescrition")}
           </p>
         </div>
         <div className="flex flex-col items-center  w-[230px] mt-[20px] lg:mt-[0px] ">
@@ -87,11 +85,10 @@ function Service() {
           </div>
 
           <h1 className="text-[15px] font-bold text-center h-[40px]  text-[#4D8F5B]">
-            Programación de computadoras y llaves
+            {t("computerProgrammingAndKeysTitle")}
           </h1>
           <p className="text-[14px] text-center text-[black]">
-            Recupera el control total de tu vehículo con nuestra programación de
-            llaves y computadoras automotrices especializada
+            {t("computerProgrammingAndKeysDescription")}
           </p>
         </div>
         <div className="flex flex-col items-center w-[230px] mt-[20px] lg:mt-[0px] ">
@@ -104,11 +101,10 @@ function Service() {
           </div>
 
           <h1 className="text-[15px] font-bold text-center h-[40px]  text-[#4D8F5B]">
-            Soldadura y hojalatería
+            {t("weldingAndBodyworkTitle")}
           </h1>
           <p className="text-[14px] text-center text-[black]">
-            Reparamos tu vehículo con precisión y calidad a través de nuestro
-            servicio de soldadura y talachería experta.
+            {t("weldingAndBodyworkDescription")}
           </p>
         </div>
       </div>

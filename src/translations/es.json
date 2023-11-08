@@ -1,4 +1,5 @@
 {
+  "service_mechanic": "Servicio Mecanico",
   "features": "Funcionalidades",
   "serviceTitle": "Servicio profesional para tu auto",
   "serviceDescription": "Bienvenido a nuestro taller mecanico, donde el rendimiento y la confiabilidad de tu vehiculo son nuestra principal preocupacion. En Greens Tires, estamos comprometido a brindarte un servicio de primera clase y mantener a tu automovil en su mejor forma. Aquí encontraras mucho mas que un simple taller mecanico, encontraras un equipo apacionado de mecanicos dedicados a tu comodidad y seguridad en la carretera.",
@@ -33,5 +34,11 @@
   "Friday": "Viernes",
   "Saturday": "Sabado",
   "Sunday": "Domingo",
-  "contactUs": "Contactanos"
+  "contactUs": "Contactanos",
+  "dating_only": "(Solo citas)",
+  "send_email": "Enviar correo",
+  "closed": "Cerrado",
+  "name": "Nombre...",
+  "phone": "Teléfono...",
+  "help": "Como podemos ayudarte?"
 }
